@@ -43,13 +43,13 @@ PASSWORD=PASSWORD
       echo
       echo
 
-echo "USER CREATED"
+      echo "USER CREATED"
 
       #Generate a Password
       sudo echo -e "PASSWORD\n$PASSWORD" | sudo passwd "user"
-      sudo passwd -5 $user
-                  fi
-              done
-          else
-echo "Only Admin Can Onboard A user"
-      fi
+      sudo passwd -x 5 $user
+                 fi
+             done
+         else
+         echo "Only Admin Can Onboard A user"
+         fi
